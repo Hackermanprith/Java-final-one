@@ -1,32 +1,10 @@
 package mini.projects.java;
-import org.w3c.dom.ls.LSOutput;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Scanner;
 public class piqgusser {
-    public final static void clearConsole()
-    {
-        try
-        {
-            final String os = System.getProperty("os.name");
-
-            if (os.contains("Windows"))
-            {
-                Runtime.getRuntime().exec("cls");
-            }
-            else
-            {
-                Runtime.getRuntime().exec("clear");
-            }
-        }
-        catch (final Exception e)
-        {
-            //  Handle any exceptions.
-        }
-    }
     public static int [] pi = { 3,1,4,1,5,9,2,6,5,3,5,8,9,7,9,3,2,3,8,4,6,2,6,4,3,3,8,3,2,7,9,5,0,2,8,8,4,1,9,7,1,6,9,3,9,9,3,7,5,1,0,5,8,2,0,9,7,4,9,4,4,5,9,2,3,0,7,8,1,6,4,0,6,2,8,6,2,0,8,9,9,8,6,2,8,0,3,4,8,2,5,3,4,2,1,1,7,0,6,7,9,8,2,1,4,8,0,8,6,5,1,3,2,8,2,3,0,6,6,4,7};
-    public static void hardguess() throws IOException {
+    public static void hardguess(){
         boolean failure = false;
         String space = null;
         int j = 3;
@@ -39,10 +17,7 @@ public class piqgusser {
             }
         }
         System.out.println("The number is: "+space);
-        for(int clear = 0; clear < 1000; clear++)
-        {
-            System.out.println("\b") ;
-        }
+        System.out.print("\u000C");
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a guess: ");
         String guess = sc.nextLine();
