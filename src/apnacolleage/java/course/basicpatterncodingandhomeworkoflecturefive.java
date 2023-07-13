@@ -185,5 +185,19 @@ public class basicpatterncodingandhomeworkoflecturefive {
             }
             System.out.println();
         }
+        System.out.println(GREEN_BRIGHT + "6th Pattern : " + RESET);
+        System.out.println();
+        for(int i = 1;i <=5;i++){
+            for(int j = 1; j <=i;j++){
+                System.out.print(CYAN_BRIGHT+j + " "+RESET);
+            }
+            System.out.println();
+        }
+        for(int i = 1;i<=5;i++){
+            for(int j = 1;j<=n-i+1;j++){
+                System.out.print(YELLOW_BOLD+j+" "+RESET);
+            }
+            System.out.println();
+        }
     }
 }

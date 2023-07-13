@@ -1,5 +1,11 @@
 package mini.projects.java;
 import java.util.*;
+/*
+* @author PRITHWISH
+* @since 11-10-2021
+* @version 1.0
+*
+ */
 public class tictactoe {
     private static String[][] board;
     private static int lol = 1;

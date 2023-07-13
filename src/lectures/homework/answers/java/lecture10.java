@@ -31,9 +31,18 @@ public class lecture10 {
             }
         }
     }
+    public static void seriesn(int x){
+        int sum = 0;
+        for(int i = 2; i <= x; i+=2){
+            sum = sum + i/(i+1);
+            System.out.println(sum);
+        }
+        System.out.println("Sum of the series is: " + sum);
+    }
     public static void main(String []args){
-        arrayname();
-        arraysearcher();
+        //arrayname();
+       // arraysearcher();
+        seriesn(88);
 
     }
 }

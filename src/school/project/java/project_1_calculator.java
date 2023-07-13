@@ -15,6 +15,7 @@ public class project_1_calculator {
             System.out.println("Enter two numbers to subtract: ");
             int num1 = input.nextInt();
             int num2 = input.nextInt();
+
             System.out.println("The difference of " + num1 + " and " + num2 + " is " + (num1 - num2));
         }
         else if(operation.equals("*")){
