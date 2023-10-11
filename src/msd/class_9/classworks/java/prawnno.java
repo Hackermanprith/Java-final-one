@@ -1,5 +1,4 @@
-package school.project.java;
-import java.math.*;
+package msd.class_9.classworks.java;
 import java.util.Scanner;
 
 public class prawnno {

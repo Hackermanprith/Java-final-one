@@ -4,7 +4,12 @@ import msd.class_9.classworks.m12;
 
 public class normalarraylist {
     /*
-    @author Prithwish
+    @author Prithwish and Aritra
+    @since 2020-12-12
+    @version 1.0
+    @apiNote This is a normal arraylist
+
+
      */
     public static void main(String[] args) {
         ArrayList<m12> arr = new ArrayList<m12>();

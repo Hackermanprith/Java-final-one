@@ -1,4 +1,4 @@
-package school.project.java;
+package msd.class_9.classworks.java;
 import java.util.Scanner;
 public class project_1_calculator {
     public static void main(String[]args){

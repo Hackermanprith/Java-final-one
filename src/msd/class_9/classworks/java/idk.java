@@ -1,4 +1,4 @@
-package school.project.java;
+package msd.class_9.classworks.java;
 
 public class idk {
     public static void main(String[] args) {

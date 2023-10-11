@@ -1,5 +1,5 @@
-package previousyear;
-import java.util.Scanner;
+package msd.class_9.classworks.previousyear;
+
 class Cabservice{
     String Cartype = " ";
     double km;

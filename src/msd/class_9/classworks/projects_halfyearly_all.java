@@ -1,13 +1,13 @@
 package msd.class_9.classworks;
 
-import java.math.BigDecimal;
+import java.math. BigDecimal;
 import java.math.BigInteger;
 import java.sql.SQLOutput;
 import java.util.Scanner;
 import java.lang.Math;
 
 public class projects_halfyearly_all {
-    public static void perfectno(int x) {
+    public static void perfectno (int x) {
         int sum = 0;
         for (int i = 1; i < x; i++) {
             if (x % i == 0) {
@@ -15,7 +15,7 @@ public class projects_halfyearly_all {
             }
         }
         if (x == sum)
-            System.out.println("Its a perfect no");
+            System.out.println ("Its a perfect no");
         else
             System.out.println("Its not perfect just like your ...... ");
 
@@ -29,7 +29,7 @@ public class projects_halfyearly_all {
         int currentno = 0;
         int  firstTerm = 0, secondTerm = 1;
         System.out.print("Fibbonaci no upto " + x + " is :");
-        while (i < x) {
+        while (i<x) {
             i++;
             System.out.print(((i ==x) ?  firstTerm : firstTerm + ","));
             int nextTerm = firstTerm + secondTerm;
@@ -83,6 +83,8 @@ public class projects_halfyearly_all {
         } else {
             System.out.println("Its not palindrome");
         }
+        System.out.println((reversedno == orignalno) ? "Its p"+"alindrome" : "Its not palindrome");
+
 
     }
 
@@ -90,6 +92,8 @@ public class projects_halfyearly_all {
         int counter = 0;
         int first_digit = 0;
         int last_digit = 0;
+        boolean l = false;
+        boolean r = true;
         String las_digit_text = "Hi";
         String firs_digit_text = "Lol";
         while (x > 0) {
@@ -112,6 +116,7 @@ public class projects_halfyearly_all {
             }
             counter++;
         }
+        System.out.println((l && r) ? "Number is starting and ending with odd digits" : "Number is not starting and"+" ending with odd digits");
         System.out.println("First digit is " + firs_digit_text + " and last digit is " + las_digit_text);
     }
 
@@ -163,33 +168,34 @@ public class projects_halfyearly_all {
         }
     }
 
-    public static void noseries(int n){
-                // initializing counter by 1
-                int num = 2;
-                int denominator = 3;
-
-                // variable to calculate result
-                double res = 0.0;
-                // while loop until nth term
-                // is not reached
-                while (n > 0)
-                {
-                    n--;
-                        res = res + (double) num / (double)denominator;
-                        if(n==0){
-                            System.out.print(num + "/" + denominator + " = ");
-                        }
-                        else {
-                            System.out.print(num + "/" + denominator + " + ");
-                        }
-                        num = num + 2;
-                        denominator = denominator + 2;
+    public static void noseries(){
+        int x = 2;
+        double sum = 0.0;
+        int num =2;
+        int denom = 3;
+                for(int i = 2;i<=14;i+=2){
+                    sum += (double)num/denom;
+                    num+= 2;
+                    denom+=2;
 
 
                 }
-                System.out.println(res);
-                String no = convertype(res);
-                System.out.println(no);
+        System.out.println(sum);
+                int n = 14;
+         num =2;
+        denom = 3;
+        sum=0.0;
+        while ( n > 0)
+        {
+            n-=2;
+            sum = sum + (double)num/denom;
+            num+= 2;
+            denom+=2;
+        }
+        System.out.println(sum);
+
+            // boolean type variable
+            // for checking vali
 
         }
 
@@ -201,9 +207,7 @@ public class projects_halfyearly_all {
         int largestno = 1;
         while (x > 0) {
             int temp = x % 10;
-            if (temp > largestno) {
-                largestno = temp;
-            }
+           largestno = Math.max(largestno, temp);
             x /= 10;
         }
         Double rootsquare = Math.sqrt(largestno);
@@ -217,14 +221,16 @@ public class projects_halfyearly_all {
             if (x % i == 0 && y % i == 0)
                 hcf = i;
         }
-        System.out.println("HCF of given two numbers is ::" + hcf);
+        System.out.println("HCF of given two numbers is ::" +
+                hcf);
         for(int k = 1; (k <= x) && (k <= y); ++k) {
             if(x % k == 0 && y % k == 0)
                 gcd = k;
         }
 
         int lcm = (x * y) / gcd;
-        System.out.printf("The LCM of %d and %d is %d.", x,y , lcm);
+        System.out.printf("The LCM of %d and %d is %d.", x,y , lcm)
+        ;
     }
     public static void series_n(int x){
         System.out.println();
@@ -236,20 +242,32 @@ public class projects_halfyearly_all {
 
 
     }
-    public static void switchcaseprogram(int x,int y){
+    public static void switchcaseprogram(int y){
         System.out.println();
-        switch(x){
-            case 1:
-                System.out.println("perimeter of circle " +  (2*3.14*y));
-                break;
-            case 2:
-                System.out.println("Area of circle " + (3.14*(y*y)));
-                break;
+        boolean flag = true;
+        Scanner sc = new Scanner(System.in);
+        while (flag) {
+            System.out.println("1. Perimeter of circle");
+            System.out.println("2. Area of circle");
+            System.out.println("3. Exit");
+            System.out.println("Enter your choice");
+            int x = sc.nextInt();
+            switch (x) {
+                case 1:
+                    System.out.println("perimeter of circle " + (2 * 3.14 *
+                            y));
+                    break;
+                case 2:
+                    System.out.println("Area of circle " + (3.14 * (y * y)));
+                    break;
+                case 3:
+                    flag = false;
+            }
+
         }
     }
     public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
-        int x = sc.nextInt();
-        fibonacci(x);
+        hcflcm(365,245);
+        fibonacci(6);
     }
 }

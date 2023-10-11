@@ -1,4 +1,4 @@
-package school.project.java;
+package msd.class_9.classworks.java;
 import java.util.*;
 public class project_4_series {
     public static void main(String []args){

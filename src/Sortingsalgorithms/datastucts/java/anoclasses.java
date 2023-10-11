@@ -20,5 +20,9 @@ public class anoclasses {
             }
         };
         lol.chos();
+        final Runnable helloWorld = () -> {
+            System.out.println("Hello World");
+        };
+        helloWorld.run();
     }
 }

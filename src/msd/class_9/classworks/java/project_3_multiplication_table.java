@@ -1,4 +1,4 @@
-package school.project.java;
+package msd.class_9.classworks.java;
 import java.util.Scanner;
 public class project_3_multiplication_table {
     public static void main(String []args){
