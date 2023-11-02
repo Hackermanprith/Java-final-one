@@ -37,8 +37,7 @@ public class docs {
      */
 
     public static void main(String args[]) throws IOException {;
-
-        int x  = Integer.parseInt("45");
-        System.out.println(x);
+        Generics<String> lamda = new Generics<>("Nigga","lamda");
+        System.out.println(lamda.getValue());
     }
 }

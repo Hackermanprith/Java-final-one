@@ -32,4 +32,17 @@ public class bst {
         }
 
     }
+    public static int search2(int[]arr,int target,int start,int end){
+        int middle = start + (end-start)/2;
+        if(start > end){
+            return  -1;
+        }
+        if(arr[middle] == target){
+            return middle;
+        }
+        else if(target < middle){
+            search2(arr, target,0,middle-1);
+        }
+        return  search(arr,target,middle+1,end);
+    }
 }

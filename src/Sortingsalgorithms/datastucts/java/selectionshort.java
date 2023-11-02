@@ -3,7 +3,7 @@ package Sortingsalgorithms.datastucts.java;
 public class selectionshort {
     static void selection(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
-            // find the max item in the remaining array and swap with correct index
+            // find  the max item in the remaining array and swap with correct index
             int last = arr.length - i - 1;
             int maxIndex = getMaxIndex(arr, 0, last);
             swap(arr, maxIndex, last);

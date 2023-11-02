@@ -32,7 +32,7 @@ public class strimgs {
         System.out.println(whatdoprithwishthinkabouthislife);
         String email = "namegobrrrr@gmail.com";
         String email1 = email.substring(0,email.indexOf("@"));
-        String email2 = email.split("n")[0];
+        String email2 = email.split("n")[1];
         System.out.println(email1);
         System.out.println(email2);
 

@@ -12,7 +12,7 @@ public class paisanikal {
         }
         System.out.println("Minimum amount of notes");
         System.out.println("-----------------------------------------------");
-       System.out.println("One rupees notes : "+ nikal.get(8));
+        System.out.println("One rupees notes : "+ nikal.get(8));
        System.out.println("Two rupees notes : "+ nikal.get(7));
        System.out.println("Five rupees notes : "+ nikal.get(6));
        System.out.println("Ten rupees notes : "+ nikal.get(5));

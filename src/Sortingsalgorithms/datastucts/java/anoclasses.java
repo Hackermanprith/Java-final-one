@@ -1,16 +1,18 @@
 package Sortingsalgorithms.datastucts.java;
 import java.lang.*;
+import java.util.Random;
+
 public class anoclasses {
     private interface anoclass{
         void chos();
         void chosa2();
     }
     public static void main(String[]args){
+        System.out.println("Hello World");
         anoclass lol = new anoclass() {
             @Override
             public void chos() {
                 System.out.println("Hello World");
-
             }
 
             @Override
@@ -21,7 +23,7 @@ public class anoclasses {
         };
         lol.chos();
         final Runnable helloWorld = () -> {
-            System.out.println("Hello World");
+
         };
         helloWorld.run();
     }

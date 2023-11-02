@@ -3,7 +3,7 @@ package Sortingsalgorithms.datastucts.java;
 import java.io.*;
 import java.util.HashMap;
 
-public class hashumap {
+public class hashumap{
     @SuppressWarnings("depreciation")
     public static void main(String[]args) throws IOException {
         HashMap <String,Integer> hm = new HashMap<String,Integer>();
